@@ -1,0 +1,524 @@
+body {
+    font-family: sans-serif;
+    margin: 0%;
+    background: #9796f0;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #fbc7d4, #9796f0);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #fbc7d4, #9796f0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#menu, #menu-check{
+  display: none;
+}
+
+header{
+    display: flex;
+    height: 30vh;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+header img{
+  border-radius: 50%;
+}
+
+a{
+    text-decoration: none;
+}
+
+.logo{
+    display: flex;
+    align-items: left;
+}
+
+.logo img{
+    height: 20vh;
+    margin-right: 20vh;
+}
+
+.Amortentia{
+    height: 10vh;
+    width: 10vw;
+    padding-top: 10px;
+    color:rgb(247, 89, 194);
+    justify-content: center;
+    text-align: center;
+    font-family:'Source Code Pro', monoespaciado;
+      
+  }
+  
+  
+  
+  li {
+    
+    list-style: none;
+    padding: 10px;
+    padding-bottom: 25px;
+    float: left;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  nav a {
+    font-size: large;
+    font-weight: 200px;
+    padding-right: 10px;
+    float: right;
+    color:rgb(247, 89, 194);
+    font-family: fantasy;
+    
+  }
+  
+  nav a:hover {
+    color: rgb(76, 0, 99);
+  }
+
+
+  /*FIN HEADER*/
+
+
+/*SLIDER*/
+.slider {
+    padding-top: 40px;
+    width: 80%;
+    height: 30%;
+    margin: auto;
+    overflow: hidden;
+    object-fit: contain;
+   
+  }
+  
+  .slider ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: slide 15s infinite;
+   
+    
+  }
+  
+  .slider li {
+    list-style: none;
+    width: 100%;
+  }
+  
+  .slider img {
+    border-radius: 15px;
+    width: 70%;
+    height: 60%;
+  }
+  
+  @keyframes slide {
+    0% {
+      margin-left: 0%;
+    }
+    20% {
+      margin-left: 0%;
+    }
+  
+    25% {
+      margin-left: -100%;
+    }
+    45% {
+      margin-left: -100%;
+    }
+  
+    50% {
+      margin-left: -200%;
+    }
+    70% {
+      margin-left: -200%;
+    }
+  
+    75% {
+      margin-left: -300%;
+    }
+    95% {
+      margin-left: -300%;
+    }
+  }
+  
+  /*FIN SLIDER*/
+
+
+  .video {
+    
+    display: flex;
+    
+    
+    }
+
+  
+ 
+
+ 
+
+ /*INICIO CARD*/
+ 
+ .objetivo{
+    padding: 0px 150px;
+   width: 500px;
+   height: 600px;
+   display: flex;
+   
+  
+ 
+ }
+ 
+ .card{
+   width: 100%;
+   margin: 20px;
+   height: 100%;
+   border-radius: 6px;
+   overflow: hidden;
+   background-color: rgba(237, 227, 248, 0.904);
+   box-shadow: 0px 1px 10px;
+   cursor: default;
+   transition: all 400ms ease;
+   text-align: center;
+   justify-content: center;
+ }
+ 
+ 
+ .card:hover{
+   box-shadow: 5px 5px 20px;
+   transform: translateY(-3%);
+ 
+ }
+ 
+ .card img{
+   width: 70%;
+   height: 300px;
+   padding-left: 50px;
+ }
+ 
+ .card .Contenido{
+   padding: 15px;
+   text-align: center;
+   justify-content: center;
+ 
+ }
+ 
+ .card .Contenido p{
+   line-height: 1.5;
+   color:#f70ae3de;
+ }
+ 
+ .card .contenido h2{
+   font-weight: 400;
+   margin-bottom: 15px;
+   
+   
+  
+ }
+
+ /*FIN CARD*/
+ 
+ 
+ /*INICIO FOOTER*/
+ 
+ .pie{
+   
+   margin-top: 450px;
+ }
+
+.header .logoo img{
+  border-radius: 60%;
+}
+ 
+ .logoo{
+  position: absolute;
+ }
+ 
+ 
+ .red{
+  padding-left: 1000px;
+  
+ }
+ 
+
+ .red img{
+  width: 80%;
+  height: 80px;
+ }
+
+ .header{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+ 
+ 
+ .section{
+  padding-top: 200px;
+   display: flex;
+   justify-content: space-evenly;
+   gap: 40px;
+   align-items: center;
+ }
+ 
+ .section div{
+   display: flex;
+   flex-direction: column;
+ 
+ }
+ 
+ div h2{
+   color: black;
+ }
+ 
+ .section a{
+   color: rgb(247, 89, 194);
+   padding: 5px;
+   font-family: fantasy;
+ }
+ 
+ 
+ .derechos{
+   display: flex;
+   
+   justify-content: space-between;
+   padding: 10px;
+   background-color: rgb(218, 217, 217);
+ }
+
+
+
+ @media only screen and (max-width:700px) {
+
+
+ 
+header{
+  position: sticky;
+  top: 0;
+  width:  100%;
+  display: flex;
+  place-content: space-between;
+  z-index: 999;
+}
+
+.logo{
+  display: none;
+  position: absolute;
+
+}
+.Amortentia{
+ 
+  margin-top: -50px;;
+  margin-left: -650px;
+  width: 10%;
+  
+  
+
+}
+
+#menu-check:not(:checked) ~ nav {
+  display: none;
+}
+
+#menu-check:checked ~ nav {
+  display: block;
+}
+#menu-check:checked ~ ul{
+  left: 0;
+}
+
+#menu{
+  display: block;
+  color: rgb(0, 0, 0);
+  background-color: rgb(250, 89, 223);
+  font-size: 1.2em;
+  font-weight: bold ;
+  border: 3px solid slateblue ;
+  border-radius: 0.3em;
+  position: absolute;
+  right: 1.5em;
+  top: 2em;
+  z-index: 9999;
+
+}
+
+#menu:hover{
+  color: beige;
+  background-color: blueviolet;
+}
+
+#menu-cerrar{
+  display: none;
+}
+
+#menu-check:checked ~ label #menu-abrir{
+  display: none;
+}
+
+#menu-check:checked ~ label #menu-cerrar{
+  display: block;
+}
+
+.nav{
+  height: 100%;
+  width: 100%;
+  padding-right: 10px;
+  text-align: center;
+  justify-content: center;
+  font-size: 1.4em;
+  
+  
+}
+
+
+header nav ul{
+  margin-top: 0px;
+  display: block;
+  width: 100%;
+  background:rgb(76, 0, 99);
+  opacity: 0.5;
+  height: 50vh;
+  text-align: center;
+  justify-content: center;
+  padding-right: 50px;
+  line-height: 70px;
+}
+
+
+header nav ul li{
+  width: 100%;
+  padding: 9px 0;
+}
+
+
+
+
+nav a {
+  float: none;
+  }
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.slider img {
+  border-radius: 15px;
+  width: 100%;
+  height: 80%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.video {
+    
+  display: inline-block;
+  
+  
+  }
+
+
+  .maquillaje{
+   display: none;
+    }  
+ 
+
+
+
+
+
+    .objetivo{
+      padding: 50px 50px;
+     width: 500px;
+     height: 600px;
+     
+     
+    
+   
+   }
+
+
+
+
+
+
+
+
+   .red img{
+    width: 80%;
+    height: 80px;
+   }
+
+
+
+   .header .logoo img{
+    border-radius: 60%;
+    height: 70%;
+    width: 70%;
+   
+    
+
+  }
+
+
+
+
+  .red{
+    padding-left: 450px;
+    
+   }
+   
+  
+   
+
+
+
+   .section h2{
+    font-size: 19px;
+   }
+
+
+}
